@@ -33,15 +33,15 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Sub-Menu Akademik:</h6>
-                        <a class="collapse-item" href="buttons.html">Jurusan</a>
-                        <a class="collapse-item" href="cards.html">Program Studi</a>
-                        <a class="collapse-item" href="cards.html">Mata Kuliah</a>
-                        <a class="collapse-item" href="cards.html">Mahasiswa</a>
-                        <a class="collapse-item" href="cards.html">Tahun Akademik</a>
-                        <a class="collapse-item" href="cards.html">Input Nilai</a>
-                        <a class="collapse-item" href="cards.html">KHS</a>
-                        <a class="collapse-item" href="cards.html">Cetak Transkip</a>
-                        <a class="collapse-item" href="cards.html">Dosen</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/jurusan') ?>">Jurusan</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/prodi') ?>">Program Studi</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/matakuliah') ?>">Mata Kuliah</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/mahasiswa') ?>">Mahasiswa</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/tahun_akademik') ?>">Tahun Akademik</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/input_nilai') ?>">Input Nilai</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/khs') ?>">KHS</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/cetak_transkip') ?>">Cetak Transkip</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/dosen') ?>">Dosen</a>
                     </div>
                 </div>
             </li>
@@ -83,7 +83,7 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="<?php echo base_url('administrator/auth/logout') ?>">
                     <i class="fas fa-fw fa-sign-out-alt"></i>
                     <span>Logout</span></a>
             </li>
@@ -96,11 +96,11 @@
             </div>
 
             <!-- Sidebar Message -->
-            <div class="sidebar-card">
+            <!-- <div class="sidebar-card">
                 <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="">
                 <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
                 <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
-            </div>
+            </div> -->
 
         </ul>
         <!-- End of Sidebar -->
