@@ -18,20 +18,22 @@
                 <th>PROGRAM STUDI</th>
                 <th colspan="3">AKSI</th>
             </tr>
+
             <?php
             $no = 1;
             foreach ($matakuliah as $mk) : ?>
-                <td><?php echo $no++; ?></td>
-                <td><?php echo $mk->kode_matakuliah ?></td>
-                <td><?php echo $mk->nama_matakuliah ?></td>
-                <td><?php echo $mk->nama_prodi ?></td>
-                <td width="20px"><?php echo anchor('administrator/matakuliah/detail/' . $mk->kode_matakuliah, '<div class="btn btn-sm btn-warning"><i class="fa fa-eye"></i></div>') ?>
-                </td>
-                <td width="20px"><?php echo anchor('administrator/matakuliah/update/' . $mk->kode_matakuliah, '<div class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></div>') ?>
-                </td>
-                <td width="20px"><?php echo anchor('administrator/matakuliah/delete/' . $mk->kode_matakuliah, '<div class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></div>') ?>
-                </td>
-
+                <tr>
+                    <td><?php echo $no++; ?></td>
+                    <td><?php echo $mk->kode_matakuliah ?></td>
+                    <td><?php echo $mk->nama_matakuliah ?></td>
+                    <td><?php echo $mk->nama_prodi ?></td>
+                    <td width="20px"><?php echo anchor('administrator/matakuliah/detail/' . $mk->kode_matakuliah, '<div class="btn btn-sm btn-warning"><i class="fa fa-eye"></i></div>') ?>
+                    </td>
+                    <td width="20px"><?php echo anchor('administrator/matakuliah/update/' . $mk->kode_matakuliah, '<div class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></div>') ?>
+                    </td>
+                    <td width="20px"><?php echo anchor('administrator/matakuliah/delete/' . $mk->kode_matakuliah, '<div class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></div>') ?>
+                    </td>
+                </tr>
             <?php endforeach ?>
 
         </table>

@@ -3,7 +3,7 @@
         <i class="fas fa-university"></i> Form Input Mata Kuliah
     </div>
 
-    <form action="post" action="<?php echo base_url('administrator/matakuliah/tambah_matakuliah_aksi') ?>">
+    <form method="post" action="<?php echo base_url('administrator/matakuliah/tambah_matakuliah_aksi') ?>">
         <div class="form-group">
             <label for="">Kode Mata Kuliah</label>
             <input type="text" name="kode_matakuliah" class="form-control">
@@ -17,29 +17,29 @@
         <div class="form-group">
             <label for="">SKS</label>
             <select name="sks" class="form-control" id="">
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-                <option value="">6</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
             </select>
         </div>
         <div class="form-group">
             <label for="">Semester</label>
             <select name="semester" class="form-control" id="">
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-                <option value="">6</option>
-                <option value="">7</option>
-                <option value="">8</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
             </select>
         </div>
         <div class="form-group">
-            <label for="">Program Sturdi</label>
+            <label for="">Program Studi</label>
             <select name="nama_prodi" id="" class="form-control">
                 <option value="">--Pilih Program Studi--</option>
                 <?php foreach ($prodi as $prd) : ?>
